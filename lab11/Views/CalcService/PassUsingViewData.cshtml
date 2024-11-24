@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "PassUsingViewData";
+}
+
+<h2>PassUsingViewData</h2>
+<p><b>Rand Value First : @ViewData["FirstValue"]</b></p>
+<p><b>Rand Value Second : @ViewData["SecondValue"]</b></p>
+<p><b>Add :</b></p>
+<p>@ViewData["FirstValue"] + @ViewData["SecondValue"] = @ViewData["Add"]</p>
+<p><b>Sub :</b></p>
+<p>@ViewData["FirstValue"] - @ViewData["SecondValue"] = @ViewData["Sub"]</p>
+<p><b>Mult :</b></p>
+<p>@ViewData["FirstValue"] * @ViewData["SecondValue"] = @ViewData["Mult"]</p>
+<p><b>Div :</b></p>
+<p>@ViewData["FirstValue"] / @ViewData["SecondValue"] = @(ViewData["Div"] != null ? ViewData["Div"].ToString() : "Деление на ноль невозможно.")</p>

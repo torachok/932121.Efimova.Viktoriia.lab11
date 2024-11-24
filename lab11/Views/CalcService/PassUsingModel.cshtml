@@ -1,0 +1,17 @@
+﻿@model CalcServiceModel
+
+@{
+    ViewData["Title"] = "PassUsingModel";
+}
+
+<h2>PassUsingModel</h2>
+<p><b>Rand Value First : @Model.FirstValue</b></p>
+<p><b>Rand Value Second : @Model.SecondValue</b></p>
+<p><b>Add :</b></p>
+<p>@Model.FirstValue + @Model.SecondValue = @Model.Add</p>
+<p><b>Sub :</b></p>
+<p>@Model.FirstValue - @Model.SecondValue = @Model.Sub</p>
+<p><b>Mult :</b></p>
+<p>@Model.FirstValue * @Model.SecondValue = @Model.Mult</p>
+<p><b>Div :</b></p>
+<p>@Model.FirstValue / @Model.SecondValue = @(Model.Div != null ? Model.Div.ToString() : "Деление на ноль невозможно.")</p>

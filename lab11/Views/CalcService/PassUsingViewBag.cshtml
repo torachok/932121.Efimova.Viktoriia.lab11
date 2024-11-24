@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "PassUsingViewBag";
+}
+
+<h2>PassUsingViewBag</h2>
+<p><b>Rand Value First : @ViewBag.FirstValue</b></p>
+<p><b>Rand Value Second : @ViewBag.SecondValue</b></p>
+<p><b>Add :</b></p>
+<p>@ViewBag.FirstValue + @ViewBag.SecondValue = @ViewBag.Add</p>
+<p><b>Sub :</b></p>
+<p>@ViewBag.FirstValue - @ViewBag.SecondValue = @ViewBag.Sub</p>
+<p><b>Mult :</b></p>
+<p>@ViewBag.FirstValue * @ViewBag.SecondValue = @ViewBag.Mult</p>
+<p><b>Div :</b></p>
+<p>@ViewBag.FirstValue / @ViewBag.SecondValue = @(ViewBag.Div != null ? ViewBag.Div.ToString() : "Деление на ноль невозможно.")</p>
